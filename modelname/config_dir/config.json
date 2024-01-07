@@ -1,0 +1,33 @@
+{
+    "processed_dir": "/home/muyj/Project/Project_1106_deephe3_example/modelname/data_dir",
+    "is_spin": true,
+    "default_dtype_torch": "torch.float32",
+    "graph_file": "/home/muyj/Project/Project_1106_deephe3_example/modelname/graph_dir/graph.pt",
+    "save_dir": "/home/muyj/Project/Project_1106_deephe3_example/modelname/save_dir",
+    "checkpoint_file": "/home/muyj/Project/Project_1106_deephe3_example/modelname/save_dir/model.pt",
+    "log_file": "/home/muyj/Project/Project_1106_deephe3_example/modelname/save_dir/train_report.log",
+    "batch_size": 2,
+    "optimizer": "Adam",
+    "optimizer_params": {
+        "lr": 0.01,
+        "betas": [
+            0.9,
+            0.99
+        ]
+    },
+    "criterion": "MSELoss",
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_params": {
+        "factor": 0.5,
+        "cooldown": 40,
+        "patience": 120,
+        "threshold": 0.05,
+        "verbose": true
+    },
+    "max_num_epochs": 10000,
+    "device": "cuda:0",
+    "train_ratio": 0.6,
+    "val_ratio": 0.2,
+    "test_ratio": 0.2,
+    "seed": 1
+}
